@@ -2,5 +2,6 @@
 
 This is a side project that I began developing to create a text based adventure.
 
-So far there isn't much to it as I have focused on World.py to make the backbone of the game easier to work with.
-Currently doesn't run succesfully but should soon-ish.
+it will end up being an army builder similar to Mount and Blade with combat similar to Heroes of Might and Magic.
+
+Should be a good time. Come for the laughs, stay for the game.
