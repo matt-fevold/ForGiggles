@@ -1,0 +1,83 @@
+Version 0.0.0.1
+
+ChangeLog:
+
+0.0.0.2
+
+
+
+0.0.0.1 - everything up until first big commit
+->Actions
+    ->MenuAction
+        -Army.py
+            #for interacting with character's army
+        -inventory.py
+            #for interacting with character's inventory
+        -self.py
+            #for interacting with character's character
+    ->MoveAction
+        -North.py
+            #move north 1 unit
+        -South.py
+            #move south 1 unit
+        -East.py
+            #move east 1 unit
+        -West.py
+            #move west 1 unit
+        -Camp.py
+            #move nowhere
+    -Action
+        #Parent Class for all Actions
+        >MoveAction.py
+            #base class for move actions - affect the world and will use the game queue
+        >MenuAction.py
+            #base class for menu actions - only affect things on character and doesn't use game queue
+->Army
+    -Army.py
+        #object to contain a character's army
+->Equipment
+    -Equipment.py
+        #object for each unit's special armor configuration
+->Items
+    -Item.py
+        #base class for all item's in the game
+    ->Armor
+        -Armor.py
+            #base class for all armor pieces
+        ->Feet
+            #used to hold all feet objects
+        ->Hands
+            #used to hold all hand objects
+        ->Head
+            #used to hold all head objects
+            -Head.py
+                #base class for all head objects
+            -LeatherHat.py
+                #Test item
+        ->Legs
+            #used to hold all leg objects
+        ->Torso
+            #used to hold all Torso objects
+    ->Weapons
+        ->Melee
+            #used to hold all melee weapons
+        ->Ranged
+            #used to hold all ranged weapons
+    ->Misc
+        -Gold.py
+            #in-game currency
+-Character.py
+    #PlayerCharacter/NPC
+-Fight.py
+    #Deprocated - left in because lazy
+-Game.py
+    #Deprocated - left in because lazy
+-Inventory.py
+    #object to hold a character's items
+-Turn.py
+    #deprocated for now
+-World.py
+    #the big bad world. lots going on here.
+-main.py
+    #where everything is being tested for now. will eventually hold the main game loop.
+

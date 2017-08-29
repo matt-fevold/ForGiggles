@@ -1,5 +1,7 @@
 from Classes.World import WorldObject, World
 from Classes.Army import Army
+from Classes import Inventory
+
 
 # needs rework
 class Character:
@@ -10,6 +12,12 @@ class Character:
         self.world = world
         self.name = name
         self.army = Army.Army(self.name)
+        self.action_list = []
+        self.inventory = Inventory.Inventory()
+
+    def print_self(self):
+        print("Name: " + self.name)
+        print("More Stuff can go here")
 
     def walk(self, direction):
         # can be N, S, E, W
